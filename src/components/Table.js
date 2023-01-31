@@ -13,7 +13,7 @@ const Table = ({data, handleClick}) => {
       </thead>
       <tbody>
         {data.map((item) => (
-          <tr key={item.id} onClick={handleClick}>
+          <tr key={item.id} onClick={() => {handleClick(item)}}>
             <td>{item.id}</td>
             <td>{item.name}</td>
             <td>{item.email}</td>
